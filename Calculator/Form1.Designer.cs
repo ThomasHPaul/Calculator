@@ -45,6 +45,10 @@
             this.btnEquals = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnOpenParenthesis = new System.Windows.Forms.Button();
+            this.btnCloseParenthesis = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn7
@@ -201,11 +205,52 @@
             this.button3.Text = "C";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // btnOpenParenthesis
+            // 
+            this.btnOpenParenthesis.Location = new System.Drawing.Point(11, 272);
+            this.btnOpenParenthesis.Name = "btnOpenParenthesis";
+            this.btnOpenParenthesis.Size = new System.Drawing.Size(47, 40);
+            this.btnOpenParenthesis.TabIndex = 21;
+            this.btnOpenParenthesis.Text = "(";
+            this.btnOpenParenthesis.UseVisualStyleBackColor = true;
+            // 
+            // btnCloseParenthesis
+            // 
+            this.btnCloseParenthesis.Location = new System.Drawing.Point(64, 272);
+            this.btnCloseParenthesis.Name = "btnCloseParenthesis";
+            this.btnCloseParenthesis.Size = new System.Drawing.Size(47, 40);
+            this.btnCloseParenthesis.TabIndex = 22;
+            this.btnCloseParenthesis.Text = ")";
+            this.btnCloseParenthesis.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(11, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(213, 49);
+            this.label1.TabIndex = 23;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // lblResultTitle
+            // 
+            this.lblResultTitle.AutoSize = true;
+            this.lblResultTitle.Location = new System.Drawing.Point(11, 8);
+            this.lblResultTitle.Name = "lblResultTitle";
+            this.lblResultTitle.Size = new System.Drawing.Size(39, 15);
+            this.lblResultTitle.TabIndex = 24;
+            this.lblResultTitle.Text = "Result";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(236, 324);
+            this.Controls.Add(this.lblResultTitle);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnCloseParenthesis);
+            this.Controls.Add(this.btnOpenParenthesis);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnEquals);
@@ -224,9 +269,10 @@
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn7);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -249,6 +295,10 @@
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnOpenParenthesis;
+        private System.Windows.Forms.Button btnCloseParenthesis;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResultTitle;
     }
 }
 
